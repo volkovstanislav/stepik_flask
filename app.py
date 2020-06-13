@@ -26,5 +26,5 @@ def render_tour(id):
     cur_tour = data.tours[id]
     return render_template('tour.html', tour=cur_tour, dep=data.departures)
 
-
-app.run('0.0.0.0',8000)
+if __name__ == '__main__':
+    app.run('0.0.0.0',8000)
